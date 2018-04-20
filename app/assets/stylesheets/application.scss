@@ -14,3 +14,36 @@
  */
 
 @import "bootstrap";
+
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    height: 100%;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+.container {
+	max-width: 1000px;
+
+}
+
+.profile {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+img {
+	max-width: 10em;
+	max-height: 10em;
+	border-radius: 50%;
+}

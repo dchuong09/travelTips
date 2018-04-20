@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-	root to: 'users#index'
+	root to: 'locations#index'
 
 	get '/users/new', to: 'users#new', as: 'new_user'
 	post '/users', to: 'users#create'
@@ -14,6 +14,10 @@ Rails.application.routes.draw do
 
 	get '/locations', to: 'locations#index'
 	get '/locations/:id', to:'locations#show', as: 'location'
+
+	
+	resources :review
+
 
 end
 #  root GET  /                   users#index

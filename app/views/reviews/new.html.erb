@@ -1,0 +1,9 @@
+
+
+<%= form_for @review do |f| %>
+  <div>
+    <%= text_field_tag 'Comment', nil, :maxlength => 500 %>
+  </div>
+
+  <%= f.submit "Submit" %>
+<% end %>

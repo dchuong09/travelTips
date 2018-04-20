@@ -1,2 +1,5 @@
-<div class="jumbotron", style="background-image: url(<%= @location.photo %>)">
-</div>
+<div class="jumbotron", style="background-image: url(<%= @location.photo %>)"></div>
+<h1> <%= @location.city %> </h1>
+<h3> <%= @location.text %> </h3>
+
+<%= link_to "Write review", new_review_path %>

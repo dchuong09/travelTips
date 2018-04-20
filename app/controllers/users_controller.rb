@@ -2,6 +2,8 @@ class UsersController < ApplicationController
 
 	def create 
 		@users = User.all
+		login(@user) # <-- log the user in
+    	redirect_to @user # <-- go to show
 	end 
 
 	def new 

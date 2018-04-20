@@ -16,6 +16,25 @@
 @import "bootstrap";
 
 
+.card {
+	height: 20em;
+	width: 18em;
+}
+
+.jumbotron1 {
+	background-image: url('https://cdn.pixabay.com/photo/2018/04/19/15/58/travel-3333493_1280.jpg');
+	height: 300px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+	height: 300px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 aside {
     display: flex;
@@ -42,7 +61,7 @@ section {
 	justify-content: space-around;
 }
 
-img {
+.profilepic {
 	max-width: 10em;
 	max-height: 10em;
 	border-radius: 50%;

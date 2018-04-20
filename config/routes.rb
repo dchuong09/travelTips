@@ -11,6 +11,10 @@ Rails.application.routes.draw do
 	get '/logout', to: 'sessions#destroy'
 	post '/sessions', to: 'sessions#create'
 
+
+	get '/locations', to: 'locations#index'
+	get '/locations/:id', to:'locations#show', as: 'location'
+
 end
 #  root GET  /                   users#index
 #        rails_service_blob GET  active_storage/blobs#show

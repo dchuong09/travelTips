@@ -1,0 +1,69 @@
+<div class="jumbotron1"> </div>
+
+<h3>Our travel guides, which are curated by Travel + Leisure editors and a network of local correspondents, highlight the best hotels, restaurants, shops, bars, and things to do in the world's most exciting destinations. Browse our in-depth travel information for great ideas and insider finds, plus smart travel tips that will have you feeling like a local in no time.</h3>
+
+
+<% @locations.each do |location| %>
+	<div class="card">
+	  <img class="card-img-top" src="<%= location.photo %>" alt="Card image cap">
+	  <div class="card-body">
+	    <h3 class="card-text"><%= location.country %></h3>
+	    <p><%= location.city %></p>
+	  </div>
+	  <a href="/locations/<%= location.id %>">Show Tips</a>
+	</div>
+<% end %>
+
+
+
+
+
+
+
+
+<!-- Cities Cards -->
+<!-- <div class="cities"> 
+	<div class="row"> 
+		<div class="col-6">
+			<div class="card">
+			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHsx1RObD5dkcd_VT18uGuk9yBQDfi8c4a4KpCln7S82vDe3q2aA" alt="Card image cap">
+			  <div class="card-body">
+			    <h3 class="card-text">Italy</h3>
+			    <p>Venice</p>
+			  </div>
+			</div>
+		</div>
+
+		<div class="col-6">
+			<div class="card">
+			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ14-GdoGzOqnWtR2eEYmCi1dr8sM_tq-qvTZklQht5Ohi--gH" alt="Card image cap">
+			  <div class="card-body">
+			    <h3 class="card-text">France</h3>
+			    <p>Paris</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row"> 
+		<div class="col-6">
+			<div class="card">
+			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1KcDhOX_HBDWyIWSTSAAQEGU-4M_D_M8ZI5M9ZGt2wHS6S6Sww" alt="Card image cap">
+			  <div class="card-body">
+			    <h3 class="card-text">Tokyo</h3>
+			    <p>Japan</p>
+			  </div>
+			</div>
+		</div>
+
+		<div class="col-6">
+			<div class="card">
+			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYdDqjqYqcr7w7bV24xLWBpuxT32PG3ds6GdXHQhXbF2TXuLK" alt="Card image cap">
+			  <div class="card-body">
+			    <h3 class="card-text">Brazil</h3>
+			    <p>Rio De Janeiro</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div> -->

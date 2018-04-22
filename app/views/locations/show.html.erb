@@ -1,5 +1,5 @@
 <div class="jumbotron", style="background-image: url(<%= @location.photo %>)"></div>
-<h1> <%= @location.city %> </h1>
-<h3> <%= @location.text %> </h3>
+<h1 class="pgecity"> <%= @location.city %> </h1>
+<h3 class="pgedesc"> <%= @location.text %> </h3>
 
 <%= link_to "Write review", new_review_path %>

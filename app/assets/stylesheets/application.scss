@@ -21,10 +21,15 @@
 	width: 18em;
 }
 
+.trvl {
+	margin: 30px 50px 100px 50px;
+	font-family: taviraj
+}
+
 .jumbotron1 {
-	background-image: url('https://cdn.pixabay.com/photo/2018/04/19/15/58/travel-3333493_1280.jpg');
-	height: 300px;
-    background-position: left;
+	background-image: url('https://cdn.pixabay.com/photo/2016/10/22/17/46/scotland-1761292__480.jpg');
+	height: 500px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,6 +39,41 @@
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.nav-item nav-link {
+	font-family: "Roboto Condensed";
+	
+}
+
+.navbar-brand {
+	font-family: Taviraj;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.card {
+	display: inline-flex;
+	margin-left: 70px;
+	margin-top: 5em;
+}
+
+.card-text {
+	font-family: "Roboto Condensed";
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	color: #6AA19A;
+}
+
+.card-city {
+	font-family: Taviraj;
+	font-size: 25px;
+	text-align: center;
+	color: black;
 }
 
 aside {

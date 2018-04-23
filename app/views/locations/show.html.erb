@@ -8,8 +8,7 @@
 		 <div class="card-body">
 		   <h5 class="card-title"><%= review.title %></h5>
 		   <p class="card-text"><%= review.description %></p>
-		   <a href="#" class="btn btn-primary">Edit</a>
-		   <a href="#" class="btn btn-danger">Delete</a>
+
 		 </div>
 	</div>
 <% end %>
@@ -37,7 +36,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <%= form_for ([@location, @review]) do |f| %>
+        <%= form_for ([@user, @location, @review]) do |f| %>
 		  <div>
 		    <%= f.text_field :title, placeholder: "Title", size: "56.8" %>
 		  </div>

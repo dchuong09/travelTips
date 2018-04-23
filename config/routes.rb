@@ -15,11 +15,15 @@ Rails.application.routes.draw do
 	get '/locations', to: 'locations#index'
 	get '/locations/:id', to:'locations#show', as: 'location'
 
+	delete '/users/:user_id/locations/:location_id/reviews/:id',to: 'reviews#destroy', as: 'destroy_review' 
 	
-	resources :locations do 
-		resources :reviews do
+
+	resources :users do 
+		resources :locations do 
+			resources :reviews do
+			end 
 		end 
-	end 
+	end
 
 
 end

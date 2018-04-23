@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Location.destroy_all
+User.destroy_all
 
 Location.create([
 	{
@@ -32,5 +33,12 @@ Location.create([
 		country: 'Brazil',
 		city: 'Rio De Janeiro',
 		text: 'Rio de Janeiro is one of the most visited cities in the Southern Hemisphere and is known for its natural settings, Carnival, samba, bossa nova, and balneario beaches such as Barra da Tijuca, Copacabana, Ipanema, and Leblon.'
+	}
+])
+
+
+User.create([
+	{
+		
 	}
 ])

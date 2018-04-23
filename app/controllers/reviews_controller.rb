@@ -1,17 +1,23 @@
 class ReviewsController < ApplicationController
-
-	def new
-		@review = Review.new
-	end
-
+	
 	def create 
-		@review = Review.create(review_params)
-		redirect_to locations_path
+		@review = Location.find_by_id(params[:location_id])
+			.reviews
+			.new(review_params)
+		
+		@review.user_id = current_user.id
+
+		if @review.save 
+			redirect_to location_path(params[:location_id])
+		end
+			
+	
+
 	end
 
-	private 
 
 	def review_params
-		params.require(:review).permit(:comment)
+		params.require(:review).permit(:title, :description)
 	end
+
 end

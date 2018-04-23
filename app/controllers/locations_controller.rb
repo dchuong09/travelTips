@@ -5,6 +5,12 @@ class LocationsController < ApplicationController
 
 	def show 
 		@location = Location.find(params[:id])
-		@reviews = @location.reviews
+		@review = Review.new
+		@reviews = Review.all
+		@user = current_user
+
+
 	end
+
+
 end

@@ -16,7 +16,10 @@ Rails.application.routes.draw do
 	get '/locations/:id', to:'locations#show', as: 'location'
 
 	
-	resources :review
+	resources :locations do 
+		resources :reviews do
+		end 
+	end 
 
 
 end

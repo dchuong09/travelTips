@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2018_04_20_190747) do
     t.string "name"
     t.string "city"
     t.string "email"
+    t.string "picture"
     t.date "datejoin"
     t.string "password_digest"
     t.datetime "created_at", null: false

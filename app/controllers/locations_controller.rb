@@ -6,7 +6,7 @@ class LocationsController < ApplicationController
 	def show 
 		@location = Location.find(params[:id])
 		@review = Review.new
-		@reviews = Review.all
+		@reviews = @location.reviews
 		@user = current_user
 
 

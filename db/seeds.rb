@@ -39,6 +39,10 @@ Location.create([
 
 User.create([
 	{
-		
+		name: 'Jacob Dao',
+		city: 'San Francisco', 
+		email: 'chdao@ga.co', 
+		picture: "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-1/p320x320/12524375_1286490648034069_2625976520561838485_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeG2Sd6s4kBJxPBoFBuY39jTtPssCYN0Kfid6T_qFJ4ycnP6hGtq1aiCso4TNny2GYJ89tkHtr5SbDbN3WlXS2pgyNY1JUmMD9swM4cKkI_cTw&oh=c58fcadd8b0d3949a9b3ace26a99b274&oe=5B4FB71E",		
+		datejoin: 04-23-2018 
 	}
 ])

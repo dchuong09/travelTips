@@ -3,17 +3,18 @@
 <h3 class="trvl">Our travel guides, which are curated by Travel + Leisure editors and a network of local correspondents, highlight the best hotels, restaurants, shops, bars, and things to do in the world's most exciting destinations. Browse our in-depth travel information for great ideas and insider finds, plus smart travel tips that will have you feeling like a local in no time.</h3>
 
 
-
+<div class="location-cards">
 <% @locations.each do |location| %>
 	<a href="/locations/<%= location.id %>">
-	<div class="card" style="width: 19rem; height: 18em;">
+	<div class="card">
 	  <img class="card-img-top" src="<%= location.photo %>" alt="Card image cap" height="178">
 	  <div class="card-body">
-	    <h3 class="card-text"><%= location.country %></h3>
-	    <p class="card-city"><%= location.city %></p>
+	    <h3 class="card-country-home"><%= location.country %></h3>
+	    <p class="card-city-home"><%= location.city %></p>
 	  </div>
 	</div>
 <% end %>
+</div>
 
 
 

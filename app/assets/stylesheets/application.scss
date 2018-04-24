@@ -15,6 +15,7 @@
 
 @import "bootstrap";
 
+
 .signup {
 	height: 100%;
 }
@@ -23,6 +24,60 @@
     font-family: Raleway;
     float: left;
     margin-top: 17px;
+
+body {
+	font-family: Taviraj;
+    font-weight: bold;
+}
+/*cards*/
+
+.location-cards {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.card-city {
+	font-family: Taviraj;
+	font-size: 25px;
+	text-align: center;
+	color: black;
+}
+
+.card-text-location {
+	max-width: 900px;
+
+}
+
+
+.card-country-home {
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+}
+
+.card-city-home {
+	text-align: center;
+	color: #000;
+	font-size: 1.25em;
+}
+
+.card-title-location {
+	font-weight: bold;
+	text-align: center;
+}
+
+.card-text {
+	font-size: 14px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.card-title {
+	color: #6AA19A;
+	text-decoration: uppercase;
+	font-weight: bold;
+	text-align: center;
+
 }
 
 .message {
@@ -45,13 +100,17 @@ footer {
 }
 
 .card {
+	display: inline-flex;
+	margin-left: 70px;
+	margin-top: 5em;
 	height: 20em;
-	width: 18em;
+	width: 22em;
 }
 
 .trvl {
-	margin: 30px 50px 100px 50px;
-	font-family: taviraj
+	margin: 30px 50px 30px 50px;
+	font-family: taviraj;
+	text-align: center;
 }
 
 .jumbotron1 {
@@ -71,6 +130,8 @@ footer {
 
 .pgecity {
 	text-align: center;
+	font-weight: bold;
+	text-align: center;
 }
 
 
@@ -79,42 +140,54 @@ footer {
 	font-family: taviraj;
 }
 
-.nav-item nav-link {
-	font-family: "Roboto Condensed";
 
+/*Nav Bar */
+.navbar {
+	flex-wrap: nowrap;
+}
+
+.navbar-nav {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.collapse {
+	display: inline-block;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.collapse.show {
+  display: inline-block;
+}
+
+.nav-item-nav-link {
+    font-family: "Roboto Condensed";
+    padding-left: 1em;
+    color: #000;
+    text-align: right;	
+}
+
+.nav-item-nav-link:hover {
+	color: #43464B;
 }
 
 .navbar-brand {
 	font-family: Taviraj;
 	font-weight: bold;
+	font-size: 1.5em;
 }
+
+.navbar-brand:hover {
+	color: #43464B;
+}
+
 
 a:hover {
 	text-decoration: none;
 }
 
-.card {
-	display: inline-flex;
-	margin-left: 70px;
-	margin-top: 5em;
-}
-
-.card-text {
-	font-family: "Roboto Condensed";
-	text-transform: uppercase;
-	font-size: 14px;
-	text-align: center;
-	font-weight: bold;
-	color: #6AA19A;
-}
-
-.card-city {
-	font-family: Taviraj;
-	font-size: 25px;
-	text-align: center;
-	color: black;
-}
-
+/* Profile page*/
 aside {
     display: flex;
     flex-direction: column;
@@ -129,11 +202,6 @@ section {
 	width: 70%;
 }
 
-.container {
-	max-width: 1000px;
-
-}
-
 .profile {
 	display: flex;
 	flex-direction: row;
@@ -145,3 +213,8 @@ section {
 	max-height: 10em;
 	border-radius: 50%;
 }
+
+
+
+
+

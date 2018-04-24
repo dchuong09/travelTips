@@ -21,11 +21,6 @@
 }
 
 
-body {
-	font-family: Taviraj;
-    font-weight: bold;
-}
-
 /*location/ reviews*/
 
 .review-button {
@@ -51,6 +46,12 @@ body {
 .card-body {
 	padding: 1em;
 	margin: auto;
+}
+
+.travelTitle {
+	font-family: 'Lobster', cursive;
+	font-size: 27px;
+	color: #18A580;
 }
 
 h4 {
@@ -91,7 +92,7 @@ h4 {
 .card-country-home {
 	font-weight: bold;
 	text-align: center;
-	color: #000;
+	color: #6AA19A;
 }
 
 .card-city-home {
@@ -213,6 +214,7 @@ section {
 }
 
 .profile {
+	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;

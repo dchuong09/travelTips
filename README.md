@@ -19,4 +19,4 @@
 ### The site will be up and running!
 
 ## Check us out!
-https://pacific-journey-72840.herokuapp.com/locations/6
+https://pacific-journey-72840.herokuapp.com/

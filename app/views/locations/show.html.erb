@@ -3,13 +3,16 @@
 <h3 class="pgedesc"> <%= @location.text %> </h3>
 
 <h4 class="travelTitle">Travel Hints To Perfect Your Trip!</h4>
+
+
+
 <div class="review-body">
+	
 <!-- Button trigger modal -->
 	<div class="review-button">
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-		Write a review
-		</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Write a review</button>
 	</div>
+
 
 <!-- Review Section -->
 	<div class="review-review">
@@ -18,13 +21,14 @@
 				 <div class="card-body">
 				   <h5 class="card-title-location"><%= review.title %></h5>
 				   <p class="card-text-location"><%= review.description %></p>
-
+				   
 				 </div>
 				 <hr>
 			</div>
 		<% end %>
 <!-- End Review Section -->
 	</div>
+
 </div>
 
 
@@ -33,8 +37,8 @@
 
 
 
-<!-- Modal -->
 <% if current_user %>
+<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">

@@ -1,24 +1,22 @@
-# README
+# Travel Tips
+### Jacob Dao
+### Emma Bennett
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Technologies Used
+* CSS3
+* HTML5
+* Bootstrap
+* Ruby on Rails
 
-Things you may want to cover:
+## Installation Process
+1. Clone the Repository
+2. bundle install
+3. rails db:create:migrate
+4. rails db:seed
+5. rails s
+6. go to localhost:3000
 
-* Ruby version
+### The site will be up and running!
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Check us out!
+https://pacific-journey-72840.herokuapp.com/

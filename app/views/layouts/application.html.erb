@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Nzjs7_tFD422Ki5K7tzHq3JcmxLF41zakvJ-zzBtsoTj_jXDMA">
   </head>
 
   <body>
@@ -19,5 +20,9 @@
     <% end %>
     
     <%= yield %>
+
+    <footer>
+      <%= render "shared/footer" %>
+    </footer>
   </body>
 </html>

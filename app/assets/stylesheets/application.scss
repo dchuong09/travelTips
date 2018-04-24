@@ -15,7 +15,34 @@
 
 @import "bootstrap";
 
+.signup {
+	height: 100%;
+}
 
+.copyright {
+    font-family: Raleway;
+    float: left;
+    margin-top: 17px;
+}
+
+.message {
+    font-family: Raleway;
+    float: right;
+    margin-top: 17px;
+}
+
+footer {
+    text-transform: uppercase;
+    padding: 0 20px 0 20px;
+    background-color: #0D2C40;
+    color: white;
+    margin-top: 60px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+}
 
 .card {
 	height: 20em;

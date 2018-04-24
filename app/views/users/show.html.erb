@@ -9,16 +9,22 @@
 		    </div>
 		</div>
 	</aside>
+
+
 	<section>
 		<% @reviews.each do |review| %>
-			<div class="card w-75 h-25">
-				 <div class="card-body">
-				   <h5 class="card-title"><%= review.title %></h5>
-				   <p class="card-text"><%= review.description %></p>
-				   <%= link_to "Edit", edit_user_location_review_path(current_user.id, review.location_id, review.id), class: "btn btn-secondary", id: "card-button" %>
-				   <%= button_to "Delete", destroy_review_path(current_user.id, review.location_id, review.id), method: :delete, class: "btn btn-danger"%>
-				 
-				 </div>
+			<div class="user-review-border">
+				<div class="user-review-card">
+					<div class="card-body-user">
+					   <h5 class="card-title-user"><%= review.title %></h5>
+					   <p class="card-text-user"><%= review.description %></p>
+
+					</div>
+				</div>
+					<div class= "reviews-buttons">
+						<%= link_to "Edit", edit_user_location_review_path(current_user.id, review.location_id, review.id), class: "btn btn-secondary" %>
+						<%= button_to "Delete", destroy_review_path(current_user.id, review.location_id, review.id), method: :delete, class: "btn btn-danger" %>
+					</div>
 			</div>
 		<% end %>
 	</section>

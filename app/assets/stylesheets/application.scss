@@ -17,14 +17,13 @@
 
 
 .signup {
-	height: 100%;
+	margin: 100px auto 290px;
+    width: 50%;
+    border: 2px #d3d3d3 solid;
+	border-radius: 10px;
+    padding: 10px;
 }
 
-
-body {
-	font-family: Taviraj;
-    font-weight: bold;
-}
 
 /*location/ reviews*/
 
@@ -51,6 +50,12 @@ body {
 .card-body {
 	padding: 1em;
 	margin: auto;
+}
+
+.travelTitle {
+	font-family: 'Lobster', cursive;
+	font-size: 27px;
+	color: #18A580;
 }
 
 h4 {
@@ -91,7 +96,7 @@ h4 {
 .card-country-home {
 	font-weight: bold;
 	text-align: center;
-	color: #000;
+	color: #6AA19A;
 }
 
 .card-city-home {
@@ -176,6 +181,7 @@ h4 {
     padding-left: 1em;
     color: #000;
     text-align: right;	
+    font-weight: bold;
 }
 
 .nav-item-nav-link:hover {
@@ -183,7 +189,7 @@ h4 {
 }
 
 .navbar-brand {
-	font-family: Taviraj;
+	font-family: 'Gugi', cursive;
 	font-weight: bold;
 	font-size: 1.5em;
 }
@@ -213,6 +219,8 @@ section {
 }
 
 .profile {
+	margin-top: 40px;
+	margin-bottom: 200px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;

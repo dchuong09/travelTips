@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 	def create 
 		@user = User.create(user_params)
 		login(@user)
-		redirect_to @user
+		redirect_to root_path
 	end
 
 	def show 

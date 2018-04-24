@@ -19,7 +19,8 @@
 .signup {
 	margin: 100px auto 290px;
     width: 50%;
-    border: 3px solid green;
+    border: 2px #d3d3d3 solid;
+	border-radius: 10px;
     padding: 10px;
 }
 
@@ -219,6 +220,7 @@ section {
 
 .profile {
 	margin-top: 40px;
+	margin-bottom: 200px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;

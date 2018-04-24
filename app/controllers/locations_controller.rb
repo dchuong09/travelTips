@@ -8,8 +8,6 @@ class LocationsController < ApplicationController
 		@review = Review.new
 		@reviews = @location.reviews
 		@user = current_user
-
-
 	end
 
 

@@ -3,13 +3,13 @@
   <a class="navbar-brand" href="">TRAVEL-TIPS</a>
   
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="nav navbar-nav navbar-right">
+    <div class="nav navbar-nav navbar-right ">
         <% if current_user %>
-          <%= link_to "Profile", user_path(current_user), class: "nav-item nav-link" %>
-          <%= link_to "Log Out", logout_path, class: "nav-item nav-link" %>
+          <%= link_to "PROFILE", user_path(current_user), class: "nav-item nav-link" %>
+          <%= link_to "LOG OUT", logout_path, class: "nav-item nav-link" %>
         <% else %>
-          <%= link_to "Create Account", new_user_path, class: "nav-item nav-link" %>
-          <%= link_to "Log In", login_path, class: "nav-item nav-link" %>
+          <%= link_to "CREATE ACCOUNT", new_user_path, class: "nav-item nav-link" %>
+          <%= link_to "LOG IN", login_path, class: "nav-item nav-link" %>
         <% end %>
 
     </div>

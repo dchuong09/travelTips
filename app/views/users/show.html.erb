@@ -1,14 +1,15 @@
 <div class="profile">
-	<aside>
-		<img class= "profilepic" src="<%= @user.picture %>">
- 		 <p><%= @user.name %>!</p>
- 		 <p><%= @user.city %></p>
- 		 <p><%= @user.email %></p>
-	</aside>
+
+	<div class="row">
+		<div class="thumbnail album-art">
+	       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1M4vrkImEnSkgFYhX7wHJ1vKZ4J07qT2j1xIj1FShQOLvGj0d" alt="album image">
+	 		<p><%= @user.name %>!</p>
+	 		<p><%= @user.city %></p>
+	 		<p><%= @user.email %></p>
+	    </div>
+	</div>
 
 	<section>
-
-		
 		<% @reviews.each do |review| %>
 			<div class="card w-75 h-25">
 				 <div class="card-body">

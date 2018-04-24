@@ -17,7 +17,7 @@ class ReviewsController < ApplicationController
 
 	def edit
 		@user = current_user
-		@location = Location.find_by_id(params[:id])
+		@location = Location.find_by_id(params[:location_id])
 		@review = Review.find_by_id(params[:id])
 
 	end

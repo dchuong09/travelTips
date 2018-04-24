@@ -14,8 +14,7 @@
 				 <div class="card-body">
 				   <h5 class="card-title"><%= review.title %></h5>
 				   <p class="card-text"><%= review.description %></p>
-				   <a href="#" class="btn btn-primary">Edit</a>
-				   <%= link_to "Edit", edit_user_location_review_path(@user.id, review.location_id, review.id) %>
+				   <%= link_to "Edit", edit_user_location_review_path(current_user.id, review.location_id, review.id) %>
 				   <%= button_to "Delete", destroy_review_path(current_user.id, review.location_id, review.id), method: :delete %>
 				   <a href="#" class="btn btn-danger">Delete</a>
 

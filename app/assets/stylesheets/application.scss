@@ -20,16 +20,55 @@
 	height: 100%;
 }
 
-.copyright {
-    font-family: Raleway;
-    float: left;
-    margin-top: 17px;
- }
 
 body {
 	font-family: Taviraj;
     font-weight: bold;
 }
+
+/*location/ reviews*/
+
+.review-button {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 2em;
+	max-height: 3em;
+	margin-top: 1em;
+	margin-left: .5em;
+}
+
+
+.review-body {
+	display: flex;
+	flex-direction: row;
+}
+
+.review-review {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-body {
+	padding: 1em;
+	margin: auto;
+}
+
+h4 {
+	text-align: center;
+}
+.pgecity {
+	text-align: center;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.pgedesc {
+	margin: 40px 60px 100px 70px;
+	font-family: taviraj;
+	text-align: center;
+}
+
 /*cards*/
 
 .location-cards {
@@ -45,10 +84,9 @@ body {
 }
 
 .card-text-location {
-	max-width: 900px;
+	width: 100%;
 
 }
-
 
 .card-country-home {
 	font-weight: bold;
@@ -64,7 +102,7 @@ body {
 
 .card-title-location {
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
 }
 
 .card-text {
@@ -81,25 +119,6 @@ body {
 
 }
 
-.message {
-    font-family: Raleway;
-    float: right;
-    margin-top: 17px;
-}
-
-footer {
-    text-transform: uppercase;
-    padding: 0 20px 0 20px;
-    background-color: #0D2C40;
-    color: white;
-    margin-top: 60px;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-    height: 60px;
-    bottom: 0;
-    width: 100%;
-}
-
 .card {
 	display: inline-flex;
 	margin-left: 70px;
@@ -108,6 +127,7 @@ footer {
 	width: 22em;
 }
 
+/*Home page layout*/
 .trvl {
 	margin: 30px 50px 30px 50px;
 	font-family: taviraj;
@@ -129,17 +149,6 @@ footer {
     background-size: cover;
 }
 
-.pgecity {
-	text-align: center;
-	font-weight: bold;
-	text-align: center;
-}
-
-
-.pgedesc {
-	margin: 40px 60px 100px 70px;
-	font-family: taviraj;
-}
 
 
 /*Nav Bar */
@@ -215,7 +224,50 @@ section {
 	border-radius: 50%;
 }
 
+.reviews-buttons {
+	display: flex;
+	flex-direction: row;
+	margin-left: 4.25em;
+	margin-bottom: 1em;
+}
 
+.user-review-card {
+	display: inline-flex;
+	height: 15em;
+	/*width: 100%;*/
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
 
+.user-review-border {
+	border: 2px #d3d3d3 solid;
+	border-radius: 10px;
+}
 
+/*footer*/
 
+footer {
+    text-transform: uppercase;
+    padding: 0 20px 0 20px;
+    background-color: #0D2C40;
+    color: white;
+    margin-top: 60px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-family: Raleway;
+    float: left;
+    margin-top: 17px;
+ }
+
+.message {
+    font-family: Raleway;
+    float: right;
+    margin-top: 17px;
+}

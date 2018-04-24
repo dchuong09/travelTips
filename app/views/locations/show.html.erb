@@ -2,26 +2,35 @@
 <h1 class="pgecity"> <%= @location.city %> </h1>
 <h3 class="pgedesc"> <%= @location.text %> </h3>
 
-<!-- Review Section -->
-<% @reviews.each do |review| %>
-	<div class="card-reviews">
-		 <div class="card-body">
-		   <h5 class="card-title-location"><%= review.title %></h5>
-		   <p class="card-text-location"><%= review.description %></p>
-
-		 </div>
-	</div>
-<% end %>
-<!-- End Review Section -->
-
-
-
-
-
+	<h4>Travel Hints To Perfect Your Trip!</h4>
+<div class="review-body">
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Write a review
-</button>
+	<div class="review-button">
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		Write a review
+		</button>
+	</div>
+
+<!-- Review Section -->
+	<div class="review-review">
+		<% @reviews.each do |review| %>
+			<div class="card-reviews">
+				 <div class="card-body">
+				   <h5 class="card-title-location"><%= review.title %></h5>
+				   <p class="card-text-location"><%= review.description %></p>
+
+				 </div>
+				 <hr>
+			</div>
+		<% end %>
+<!-- End Review Section -->
+	</div>
+</div>
+
+
+
+
+
 
 
 <!-- Modal -->
